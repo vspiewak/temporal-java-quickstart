@@ -1,5 +1,7 @@
 # Temporal Java Quickstart
 
+## Setup
+
     # build the project
     ./mvnw clean compile
     
@@ -7,9 +9,7 @@
     temporal server start-dev --ui-port 8080
 
 
-    #
-    # case 1
-    #
+## Scenario 1
     
     # start the worker
     ./mvnw exec:java -Dexec.mainClass="com.github.vspiewak.temporal._1.HelloWorker"
@@ -21,9 +21,7 @@
     temporal workflow show --workflow-id my-first-workflow
 
 
-    #
-    # case 2
-    #
+## Scenario 2
     
     # start the worker
     ./mvnw exec:java -Dexec.mainClass="com.github.vspiewak.temporal._1.HelloWorker"
@@ -32,9 +30,7 @@
     ./mvnw exec:java -Dexec.mainClass="com.github.vspiewak.temporal._2.StartWorkflow" -Dexec.args="'Vincent'"
 
 
-    #
-    # case 3
-    #
+## Scenario 3
     
     # start the worker
     ./mvnw exec:java -Dexec.mainClass="com.github.vspiewak.temporal._1.HelloWorker"
@@ -43,9 +39,7 @@
     ./mvnw exec:java -Dexec.mainClass="com.github.vspiewak.temporal._3.StartScheduleWorkflow"
 
 
-    #
-    # case 4
-    #
+## Scenario 4
 
     # start the worker
     ./mvnw exec:java -Dexec.mainClass="com.github.vspiewak.temporal._4.OrderWorker"
@@ -53,10 +47,8 @@
     # start a workflow execution
     temporal workflow start --type OrderWorkflow --workflow-id my-order-workflow --task-queue order-task-queue
 
-    
-    #
-    # case 5
-    #
+
+## Scenario 5
 
     # start the worker
     ./mvnw exec:java -Dexec.mainClass="com.github.vspiewak.temporal._5.RetryWorker"
@@ -65,20 +57,16 @@
     temporal workflow start --type RetryWorkflow --workflow-id my-retry-workflow --task-queue retry-task-queue
 
 
-    #
-    # case 6
-    #
+## Scenario 6
     
     # start the worker
     ./mvnw exec:java -Dexec.mainClass="com.github.vspiewak.temporal._6.SleepyWorker"
 
     # start a workflow execution
     temporal workflow start --type SleepyWorkflow --workflow-id my-sleepy-workflow --task-queue sleepy-task-queue
-    
 
-    #
-    # case 7
-    #
+
+## Scenario 7
 
     # start the worker
     ./mvnw exec:java -Dexec.mainClass="com.github.vspiewak.temporal._7.SignalWorker"
