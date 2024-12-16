@@ -21,7 +21,7 @@
     temporal workflow show -w my-first-workflow
 
 
-## Scenario 2 - Start Workflow from SDK
+## Scenario 2 - Start a Workflow Execution from the SDK
     
     # start the worker
     ./mvnw exec:java -Dexec.mainClass="com.github.vspiewak.temporal._1.HelloWorker"
@@ -30,7 +30,7 @@
     ./mvnw exec:java -Dexec.mainClass="com.github.vspiewak.temporal._2.StartWorkflow" -Dexec.args="'Vincent'"
 
 
-## Scenario 3 - Start Schedule Workflow
+## Scenario 3 - Start a Schedule Workflow
     
     # start the worker
     ./mvnw exec:java -Dexec.mainClass="com.github.vspiewak.temporal._1.HelloWorker"
@@ -39,7 +39,7 @@
     ./mvnw exec:java -Dexec.mainClass="com.github.vspiewak.temporal._3.StartScheduleWorkflow"
 
 
-## Scenario 4 - Ordering activities
+## Scenario 4 - Ordering Activities
 
     # start the worker
     ./mvnw exec:java -Dexec.mainClass="com.github.vspiewak.temporal._4.OrderWorker"
@@ -66,7 +66,7 @@
     temporal workflow start --type SleepyWorkflow -w my-sleepy-workflow -t sleepy-task-queue
 
 
-## Scenario 7 - Send a signal to a workflow
+## Scenario 7 - Send a signal to a Workflow Execution
 
     # start the worker
     ./mvnw exec:java -Dexec.mainClass="com.github.vspiewak.temporal._7.SignalWorker"
@@ -81,7 +81,7 @@
     ./mvnw exec:java -Dexec.mainClass="com.github.vspiewak.temporal._7.SignalSender"
 
 
-## Scenario 8 - Child workflow
+## Scenario 8 - Child Workflow
 
     # start the worker
     ./mvnw exec:java -Dexec.mainClass="com.github.vspiewak.temporal._8.worker.StartWorker"
