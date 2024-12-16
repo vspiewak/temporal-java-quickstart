@@ -1,5 +1,7 @@
 # Temporal Java Quickstart
 
+Build invincible applications with [Temporal](https://temporal.io) using the Java SDK.
+
 ## Setup
 
     # build the project
