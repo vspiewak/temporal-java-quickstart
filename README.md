@@ -79,3 +79,17 @@
 
     # ... or with SDK
     ./mvnw exec:java -Dexec.mainClass="com.github.vspiewak.temporal._7.SignalSender"
+
+
+## Scenario 8
+
+    # start the worker
+    ./mvnw exec:java -Dexec.mainClass="com.github.vspiewak.temporal._8.worker.StartWorker"
+
+    # start a notify workflow execution
+    temporal workflow start --type NotifyWorkflow --workflow-id my-notify-workflow --task-queue my-task-queue --input '"vince@nospam.org"'
+    
+    # start a register workflow execution
+    temporal workflow start --type RegisterWorkflow --workflow-id my-register-workflow --task-queue my-task-queue --input '"vince@nospam.org"'
+        
+    

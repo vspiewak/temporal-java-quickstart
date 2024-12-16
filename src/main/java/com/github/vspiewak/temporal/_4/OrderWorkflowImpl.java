@@ -22,7 +22,7 @@ public class OrderWorkflowImpl implements OrderWorkflow {
     @Override
     public List<String> execute(String name) {
 
-        List<String> results = new ArrayList();
+        var results = new ArrayList<String>();
 
         results.add(activities.activityOne());
         results.add(activities.activityTwo());
