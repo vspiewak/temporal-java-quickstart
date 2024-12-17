@@ -82,7 +82,6 @@ Build invincible applications with [Temporal](https://temporal.io) using the Jav
     # ... or with SDK
     ./mvnw exec:java -Dexec.mainClass="com.github.vspiewak.temporal._7.SignalSender"
 
-
 ## Scenario 8 - Child Workflow
 
     # start the worker
@@ -93,5 +92,13 @@ Build invincible applications with [Temporal](https://temporal.io) using the Jav
     
     # start a register workflow execution
     temporal workflow start --type RegisterWorkflow -w my-register-workflow -t my-task-queue -i '"vince@nospam.org"'
-        
+
+
+## Scenario 9 - Show Workflow Execution
+    
+    # show a workflow execution using temporal cli
+    temporal workflow show -w my-notify-workflow -o json
+
+    # ... or with SDK
+    ./mvnw exec:java -Dexec.mainClass="com.github.vspiewak.temporal._9.ShowWorkflow" -Dexec.args="my-notify-workflow"
     
