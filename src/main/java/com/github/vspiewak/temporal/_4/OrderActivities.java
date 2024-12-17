@@ -6,8 +6,11 @@ import io.temporal.activity.ActivityInterface;
 public interface OrderActivities {
 
     String activityOne();
+
     String activityTwo();
+
     String activityThree();
+
     String activityFour();
 
 }

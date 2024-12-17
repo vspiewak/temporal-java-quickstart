@@ -10,7 +10,6 @@ public class StartWorkflow {
 
     public static void main(String[] args) throws Exception {
 
-        // Get a Workflow service stub
         WorkflowServiceStubs service = WorkflowServiceStubs.newLocalServiceStubs();
 
         WorkflowClient client = WorkflowClient.newInstance(service);
@@ -27,6 +26,7 @@ public class StartWorkflow {
         String workflowId = WorkflowStub.fromTyped(workflow).getExecution().getWorkflowId();
 
         System.out.printf("HelloWorkflow id: %s, result: %s%n", workflowId, result);
+
         System.exit(0);
 
     }

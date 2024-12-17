@@ -1,8 +1,8 @@
 package com.github.vspiewak.temporal._7;
 
+import io.temporal.workflow.SignalMethod;
 import io.temporal.workflow.WorkflowInterface;
 import io.temporal.workflow.WorkflowMethod;
-import io.temporal.workflow.SignalMethod;
 
 @WorkflowInterface
 public interface SignalWorkflow {

@@ -1,7 +1,6 @@
 package com.github.vspiewak.temporal._7;
 
 import io.temporal.client.WorkflowClient;
-import io.temporal.client.WorkflowOptions;
 import io.temporal.serviceclient.WorkflowServiceStubs;
 
 public class SignalSender {
